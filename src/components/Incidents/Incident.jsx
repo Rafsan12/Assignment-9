@@ -4,7 +4,7 @@ export default function Incident({ incident }) {
   return (
     <>
       <div className="relative w-[306px] hover:scale-105 transition-transform'">
-        <img src={image} alt={location} className="w-full h-40 object-cover" />
+        <img src={image} alt={location} className="w-full h-40" />
         <div className="p-4">
           <h3 className="font-semibold text-lg">{location}</h3>
           <p className="text-sm text-gray-500">{city}</p>
