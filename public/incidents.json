@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "location": "Whitechapel Rd.",
+    "city": "Tulare County, Los Angeles, CA 23415",
+    "price": "$1,456,654.00",
+    "image": "https://ibb.co.com/KV8B2h0",
+    "category": "Blizzard"
+  },
+  {
+    "id": 2,
+    "location": "Whitechapel Rd.",
+    "city": "Tulare County, Los Angeles, CA 23415",
+    "price": "$1,456,654.00",
+    "image": "https://ibb.co.com/bdWw4Qg",
+    "category": "Blizzard"
+  },
+  {
+    "id": 3,
+    "location": "Tulare County",
+    "city": "Tulare County, Los Angeles, CA 23415",
+    "price": "$1,456,654.00",
+    "image": "https://ibb.co.com/bWpgbSY",
+    "category": "Blizzard"
+  },
+  {
+    "id": 4,
+    "location": "Tulare County",
+    "city": "Tulare County, Los Angeles, CA 23415",
+    "price": "$1,456,654.00",
+    "image": "https://ibb.co.com/RgCTF99",
+    "category": "Blizzard"
+  },
+  {
+    "id": 5,
+    "location": "Tulare County",
+    "city": "Tulare County, Los Angeles, CA 23415",
+    "price": "$1,456,654.00",
+    "image": "https://via.placeholder.com/300x200",
+    "category": "Blizzard"
+  },
+  {
+    "id": 6,
+    "location": "Tulare County",
+    "city": "Tulare County, Los Angeles, CA 23415",
+    "price": "$1,456,654.00",
+    "image": "https://via.placeholder.com/300x200",
+    "category": "Blizzard"
+  }
+]
