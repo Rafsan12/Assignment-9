@@ -1,4 +1,4 @@
-import Incidents from "../components/Incidents/incidents";
+import Incidents from "../components/Incidents/Incidents";
 
 export default function Home() {
   return (
