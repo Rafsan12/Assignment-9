@@ -3,15 +3,15 @@ import Dashboard from "../components/DashBord/DashBord";
 import Header from "../components/Header/Header";
 
 export default function Root() {
-  const location = useLocation(); // Get the current location
+  const location = useLocation();
 
   return (
     <>
       <Header />
 
-      {/* Conditionally render Dashboard unless the pathname is "/describes_incident" */}
       {location.pathname !== "/describes_incident" &&
-        location.pathname !== "/incident_title" && <Dashboard />}
+        location.pathname !== "/incident_title" &&
+        location.pathname !== "/where" && <Dashboard />}
 
       <Outlet />
     </>
