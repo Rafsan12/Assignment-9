@@ -1,3 +1,5 @@
+import Map from "../../assets/map.png";
+
 export default function IncidentMap() {
   return (
     <>
@@ -5,7 +7,7 @@ export default function IncidentMap() {
         <p className="pb-3">Incident Map</p>
         <img
           className="w-full lg:h-[503px] rounded-[10px] cursor-pointer"
-          src="/img/map.png"
+          src={Map}
           alt="Incident Map"
         />
         <p className="pt-3 flex items-center gap-10 lg:gap-20 text-[14px] text-[#71717A]">

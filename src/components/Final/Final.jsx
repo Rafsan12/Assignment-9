@@ -1,3 +1,6 @@
+import Building from "../../assets/building.png";
+import Location1 from "../../assets/location1.png";
+import Location2 from "../../assets/location2.png";
 import IncidentMap from "./IncidentMap";
 import LocationCard from "./LocationCard";
 import LocationInfo from "./LocationInfo";
@@ -38,16 +41,16 @@ export default function Final() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-5">
                 <MainCard
-                  img="/img/location1.png"
-                  icon="/img/building.png"
+                  img={Location1}
+                  icon={Building}
                   iconText="Building"
                   heading="Whitechapel Rd."
                   title="Tulare County, Los Angeles, CA 23415"
                   int="$1,456,654.00"
                 />
                 <MainCard
-                  img="/img/location2.png"
-                  icon="/img/building.png"
+                  img={Location2}
+                  icon={Building}
                   iconText="Building"
                   heading="Whitechapel Rd."
                   title="Tulare County, Los Angeles, CA 23415"
@@ -69,12 +72,12 @@ export default function Final() {
               </div>
               <div className="flex flex-col gap-5">
                 <LocationCard
-                  img="/img/location1.png"
+                  img={Location2}
                   name="Activity name"
                   int="$1,456,654.00"
                 />
                 <LocationCard
-                  img="/img/location1.png"
+                  img={Location2}
                   name="Activity name"
                   int="$1,456,654.00"
                 />
@@ -94,12 +97,12 @@ export default function Final() {
               </div>
               <div className="flex flex-col gap-5">
                 <LocationCard
-                  img="/img/location1.png"
+                  img={Location1}
                   name="Document name"
                   int="$1,456,654.00"
                 />
                 <LocationCard
-                  img="/img/location1.png"
+                  img={Location1}
                   name="Document name"
                   int="$1,456,654.00"
                 />

@@ -1,3 +1,5 @@
+import Approx from "../../assets/approx.png";
+import Location from "../../assets/location.png";
 export default function LocationInfo() {
   return (
     <>
@@ -5,7 +7,7 @@ export default function LocationInfo() {
         <div className="flex items-center gap-3">
           <div className="w-[37px] h-[37px] rounded-full bg-[#f5f5f5] flex items-center justify-center">
             <img
-              src="/img/location.png"
+              src={Location}
               alt="Location Icon"
               className="text-[#72727a]"
             />
@@ -20,7 +22,7 @@ export default function LocationInfo() {
         <div className="flex items-center gap-3">
           <div className="w-[37px] h-[37px] rounded-full bg-[#f5f5f5] flex items-center justify-center">
             <img
-              src="/img/approx.png"
+              src={Approx}
               alt="Approx Cost Icon"
               className="text-[#72727a]"
             />
