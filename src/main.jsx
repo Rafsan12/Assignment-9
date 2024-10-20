@@ -6,6 +6,7 @@ import Describes_Incident from "./components/Describes_Incident/Describes_Incide
 import Incident_Title from "./components/Incident_Title/Incident_Title";
 import Incidents from "./components/Incidents/incidents";
 import New_Incident from "./components/New_Incident/New_Incident";
+import Where_Incident from "./components/Where_Incident/Where_Incident";
 import Home from "./Home/Home";
 import "./index.css";
 import Root from "./Root/Root";
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/incident_title",
         element: <Incident_Title />,
+      },
+      {
+        path: "/where_incident",
+        element: <Where_Incident />,
       },
     ],
   },
