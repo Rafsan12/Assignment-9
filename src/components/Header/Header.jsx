@@ -1,56 +1,95 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import Bell from "../../assets/Group 1171276277.png";
 import Logo from "../../assets/LOGOEXPLORATION Search Bar Icon 8.png";
+import User from "../../assets/user.png";
+import { CrossSvg, MenuSvg } from "../../utlity/Svg";
+
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   const links = (
     <>
-      <Link to={"/dashboard"}>
-        <a href="">Dashboard</a>
+      <Link to={"/dashboard"} className="block py-2 px-4 hover:bg-gray-200">
+        Dashboard
       </Link>
-      <Link to={"/incidents"}>
-        <a href="">Incidents</a>
+      <Link to={"/incidents"} className="block py-2 px-4 hover:bg-gray-200">
+        Incidents
       </Link>
-      <Link to={"/locations"}>
-        <a href="">Locations</a>
+      <Link to={"/locations"} className="block py-2 px-4 hover:bg-gray-200">
+        Locations
       </Link>
-      <Link to={"/activities"}>
-        <a href="">Activities</a>
+      <Link to={"/activities"} className="block py-2 px-4 hover:bg-gray-200">
+        Activities
       </Link>
-      <Link to={"/documents"}>
-        <a href="">Documents</a>
+      <Link to={"/documents"} className="block py-2 px-4 hover:bg-gray-200">
+        Documents
       </Link>
-      <Link to={"/cypher_aI"}>
-        <a href="">Cypher AI</a>
+      <Link to={"/cypher_aI"} className="block py-2 px-4 hover:bg-gray-200">
+        Cypher AI
       </Link>
     </>
   );
+
   return (
-    <>
-      <div className=" flex items-center justify-evenly px-4 py-2 bg-gray-100 border-b border-gray-300">
-        <div>
-          <Link to="/">
-            <img src={Logo} alt="Logo" />
-          </Link>
-        </div>
-        <nav className="space-x-4 ml-10">{links}</nav>
-
-        <div className="w-10 rounded-full">
-          <img
-            alt="Tailwind CSS Navbar component"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-          />
+    <header className="bg-gray-100 border-b border-gray-300">
+      <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+        {/* Left - Logo */}
+        <div className="flex items-center">
+          <img src={Logo} alt="Logo" className="h-10" />
         </div>
 
-        <button className="btn btn-ghost btn-circle">
-          <div className="indicator">
-            <img src={Bell} alt="" />
-            <span className="badge badge-xs badge-primary indicator-item"></span>
+        {/* Middle - Navigation Links */}
+        <nav className="hidden md:flex space-x-4 ml-10">{links}</nav>
+
+        {/* Right - Search, Sort and Button (hidden on mobile) */}
+        <div className="hidden md:flex space-x-4 items-center">
+          {/* Search */}
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search Incident"
+              className="border border-gray-300 rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400"
+            />
           </div>
-        </button>
+        </div>
+
+        {/* Hamburger Icon - visible on mobile */}
+        <div className="md:hidden flex items-center">
+          <button
+            onClick={toggleMenu}
+            className="text-gray-900 focus:outline-none"
+          >
+            {isMenuOpen ? (
+              <MenuSvg className="h-6 w-6" />
+            ) : (
+              <CrossSvg className="h-6 w-6" />
+            )}
+          </button>
+        </div>
+
+        {/* Right - User Info */}
+        <div className="hidden md:flex items-center space-x-3">
+          {/* Avatar */}
+          <div className="relative">
+            <img
+              src={User}
+              alt="Avatar"
+              className="h-8 w-8 rounded-full object-cover"
+            />
+          </div>
+        </div>
       </div>
-      <div className="bg-black border-neutral-950">
-        <hr className="border-t border-neutral-950" />
-      </div>
-    </>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <nav className="md:hidden bg-gray-100 border-t border-gray-300">
+          <div className="px-4 py-4 space-y-2">{links}</div>
+        </nav>
+      )}
+    </header>
   );
 }
