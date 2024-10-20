@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "icon": "https://i.ibb.co.com/0BMxjQB/Avalanche.png",
+    "name": "Avalanche"
+  },
+  {
+    "id": 2,
+    "icon": "https://i.ibb.co.com/BwzdYqp/Biological.png",
+    "name": "Biological"
+  },
+  {
+    "id": 3,
+    "icon": "https://i.ibb.co.com/D5ByNC6/Blizzard.png",
+    "name": "Blizzard"
+  },
+  {
+    "id": 4,
+    "icon": "https://i.ibb.co.com/7VV7JR1/Cold-Freezing.png",
+    "name": "Cold/Freezing"
+  },
+  {
+    "id": 5,
+    "icon": "https://i.ibb.co.com/W3NsRzV/Drought.png",
+    "name": "Drought"
+  },
+  {
+    "id": 6,
+    "icon": "https://i.ibb.co.com/wYCqXj8/Earthquake.png",
+    "name": "Earthquake"
+  },
+  {
+    "id": 7,
+    "icon": "https://i.ibb.co.com/yRQQZmt/Flooding.png",
+    "name": "Flooding"
+  },
+  {
+    "id": 8,
+    "icon": "https://i.ibb.co.com/rfcswKZ/Heat.png",
+    "name": "Heat Wave"
+  },
+  {
+    "id": 9,
+    "icon": "https://i.ibb.co.com/k9kmDKs/Hail.png",
+    "name": "Hail"
+  },
+  {
+    "id": 10,
+    "icon": "https://i.ibb.co.com/LZmYYY7/Lightning.png",
+    "name": "Lightning"
+  },
+  {
+    "id": 11,
+    "icon": "https://i.ibb.co.com/MDVXBV0/ManMade.png",
+    "name": "Man Made"
+  },
+  {
+    "id": 12,
+    "icon": "https://i.ibb.co.com/VLJXNw8/Mudslide.png",
+    "name": "Mudslide"
+  },
+  {
+    "id": 13,
+    "icon": "https://i.ibb.co.com/J3YnKYW/Severe-Storm.png",
+    "name": "Severe Storm"
+  },
+  {
+    "id": 14,
+    "icon": "https://i.ibb.co.com/mF8bNd5/Tornado.png",
+    "name": "Strong Wind"
+  },
+  {
+    "id": 15,
+    "icon": "https://i.ibb.co.com/mF8bNd5/Tornado.png",
+    "name": "Tornado"
+  },
+  {
+    "id": 16,
+    "icon": "https://i.ibb.co.com/yq9kgGZ/Tsunami.png",
+    "name": "Tsunami"
+  },
+  {
+    "id": 17,
+    "icon": "https://i.ibb.co.com/yhv5CCX/volcanic.png",
+    "name": "Volcanic Eruption"
+  },
+  {
+    "id": 18,
+    "icon": "https://i.ibb.co.com/6vw9f6S/Wildfire.png",
+    "name": "Wildfire"
+  }
+]
