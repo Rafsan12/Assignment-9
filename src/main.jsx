@@ -5,7 +5,7 @@ import Dashboard from "./components/DashBord/DashBord";
 import Describes_Incident from "./components/Describes_Incident/Describes_Incident";
 import Final from "./components/Final/Final";
 import Incident_Title from "./components/Incident_Title/Incident_Title";
-import Incidents from "./components/Incidents/incidents";
+import Incidents from "./components/Incidents/Incidents";
 import New_Incident from "./components/New_Incident/New_Incident";
 import Where_Incident from "./components/Where_Incident/Where_Incident";
 import Home from "./Home/Home";
