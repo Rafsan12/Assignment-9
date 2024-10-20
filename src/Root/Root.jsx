@@ -10,7 +10,8 @@ export default function Root() {
       <Header />
 
       {/* Conditionally render Dashboard unless the pathname is "/describes_incident" */}
-      {location.pathname !== "/describes_incident" && <Dashboard />}
+      {location.pathname !== "/describes_incident" &&
+        location.pathname !== "/incident_title" && <Dashboard />}
 
       <Outlet />
     </>

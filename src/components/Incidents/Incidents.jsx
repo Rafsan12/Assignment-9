@@ -20,14 +20,13 @@ export default function Incidents() {
     casesData();
   }, []);
 
-  // Toggle the chat box visibility
   const Cbutton = () => {
     if (hidden === "hidden") {
       setHidden("block");
-      setIcon("X"); // Change icon to 'X' or something else when chat is open
+      setIcon("X");
     } else {
       setHidden("hidden");
-      setIcon("C"); // Reset icon when chat is closed
+      setIcon("C");
     }
   };
 
