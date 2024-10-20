@@ -15,6 +15,10 @@ export default function Dashboard() {
   } else if (location.pathname === "/locations") {
     headerText = "Locations";
     welcomeText = "Explore locations";
+  } else if (location.pathname === "/describes_incident") {
+    headerText = "New Incident";
+    welcomeText = "Home - Incidents - New Incidents";
+    buttonText = "Next Step";
   }
 
   const handleButtonClick = () => {
