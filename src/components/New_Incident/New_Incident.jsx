@@ -6,7 +6,6 @@ export default function New_Incident() {
   const [newIncident, setNewIncident] = useState([]);
   const [error, setError] = useState(null); // Add state for handling errors
   const navigate = useNavigate();
-  //   const location = useLocation();
 
   useEffect(() => {
     const fetchIncidentData = async () => {

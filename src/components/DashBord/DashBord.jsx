@@ -15,17 +15,19 @@ export default function Dashboard() {
   } else if (location.pathname === "/locations") {
     headerText = "Locations";
     welcomeText = "Explore locations";
-  } else if (location.pathname === "/describes_incident") {
-    headerText = "New Incident";
-    welcomeText = "Home - Incidents - New Incidents";
-    buttonText = "Next Step";
   }
 
   const handleButtonClick = () => {
     if (location.pathname === "/incidents") {
       navigate("/new-incident");
+    } else if (location.pathname === "/describes_incident") {
+      navigate("/describes_incident");
+    } else {
+      console.log("No navigation path matched");
     }
   };
+
+  console.log("Current pathname:", location.pathname);
 
   return (
     <div className="w-full bg-gray-50 p-4">
