@@ -28,7 +28,9 @@ export default function Header() {
     <>
       <div className=" flex items-center justify-evenly px-4 py-2 bg-gray-100 border-b border-gray-300">
         <div>
-          <img src={Logo} alt="Logo" />
+          <Link to="/">
+            <img src={Logo} alt="Logo" />
+          </Link>
         </div>
         <nav className="space-x-4 ml-10">{links}</nav>
 

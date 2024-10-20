@@ -1,7 +1,8 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Dashboard() {
   const location = useLocation();
+  const navigate = useNavigate();
 
   let headerText = "Dashboard";
   let welcomeText = "Welcome back";
@@ -15,6 +16,12 @@ export default function Dashboard() {
     headerText = "Locations";
     welcomeText = "Explore locations";
   }
+
+  const handleButtonClick = () => {
+    if (location.pathname === "/incidents") {
+      navigate("/new-incident");
+    }
+  };
 
   return (
     <div className="w-full bg-gray-50 p-4">
@@ -42,7 +49,10 @@ export default function Dashboard() {
           </button>
 
           {/* Gather all button */}
-          <button className="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600">
+          <button
+            onClick={handleButtonClick}
+            className="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600"
+          >
             {buttonText}
           </button>
         </div>

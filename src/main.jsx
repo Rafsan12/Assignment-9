@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./components/DashBord/DashBord";
 import Incidents from "./components/Incidents/incidents";
+import New_Incident from "./components/New_Incident/New_Incident";
 import Home from "./Home/Home";
 import "./index.css";
 import Root from "./Root/Root";
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/incidents",
         element: <Incidents />,
+      },
+      {
+        path: "/new-incident",
+        element: <New_Incident />,
       },
     ],
   },

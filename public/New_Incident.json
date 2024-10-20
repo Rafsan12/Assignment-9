@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co.com/HzQc9ST/inc1.png",
+    "title": "What type of incident?",
+    "dts": "Choose the category that best describes the incident."
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co.com/2nMWwq2/inc2.png",
+    "title": "Tell us about the incident?",
+    "dts": "Let’s connect the dots and see where to start."
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co.com/2Svpd69/inc3.png",
+    "title": "Where did the incident occur?",
+    "dts": "Lorem ipsum dolor sit general sac mascho werho."
+  }
+]
